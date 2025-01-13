@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { HeadTitle } from "../title";
+import { HeadTitle } from "../UI/head.title";
 import { ListAnnounce } from "../get.list.data";
 import { IoIosArrowDropright } from "react-icons/io";
 

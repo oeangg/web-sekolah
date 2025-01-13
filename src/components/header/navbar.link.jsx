@@ -1,8 +1,13 @@
+"use client";
+
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const NavbarLink = () => {
+  const pathname = usePathname();
+
   return (
     <div>
       <div className="cursor-pointer md:hidden">
@@ -10,22 +15,72 @@ export const NavbarLink = () => {
       </div>
       <ul className="hidden gap-6 text-base font-semibold md:flex">
         <li>
-          <Link href="">Beranda</Link>
+          <Link
+            href="/"
+            className={
+              pathname === "/" ? "text-primaryColor" : "text-foreground"
+            }
+          >
+            Beranda
+          </Link>
         </li>
         <li>
-          <Link href="">Profil</Link>
+          <Link
+            href="/profil"
+            className={
+              pathname === "/profil" ||
+              pathname === "/sejarah" ||
+              pathname === "/visimisi" ||
+              pathname === "/guru" ||
+              pathname === "/sambutan" ||
+              pathname === "/kepalasekolah" ||
+              pathname === "/fasilitas"
+                ? "text-primaryColor"
+                : "text-foreground"
+            }
+          >
+            Profil
+          </Link>
         </li>
         <li>
-          <Link href="">Kegiatan</Link>
+          <Link
+            href="/kegiatan"
+            className={
+              pathname === "/kegiatan" ? "text-primaryColor" : "text-foreground"
+            }
+          >
+            Kegiatan
+          </Link>
         </li>
         <li>
-          <Link href="">Gallery</Link>
+          <Link
+            href="/gallery"
+            className={
+              pathname === "/gallery" ? "text-primaryColor" : "text-foreground"
+            }
+          >
+            Gallery
+          </Link>
         </li>
         <li>
-          <Link href="">P.P.D.B</Link>
+          <Link
+            href="/ppdb"
+            className={
+              pathname === "/ppdb" ? "text-primaryColor" : "text-foreground"
+            }
+          >
+            P.P.D.B
+          </Link>
         </li>
         <li>
-          <Link href="">Kontak Kami</Link>
+          <Link
+            href="/kontak"
+            className={
+              pathname === "/kontak" ? "text-primaryColor" : "text-foreground"
+            }
+          >
+            Kontak Kami
+          </Link>
         </li>
       </ul>
     </div>

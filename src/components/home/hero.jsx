@@ -5,21 +5,21 @@ import { HeroImage1, HeroImage2, HeroImage3 } from "../get.image";
 
 export const HeroSection = () => {
   return (
-    <section className="mx-auto mb-10 flex max-w-6xl flex-col gap-4 pt-20 lg:h-svh lg:flex-row-reverse lg:justify-between">
-      <div className="flex h-full w-full flex-col items-center justify-center px-4 py-10 lg:px-0">
-        <div className="h-1/2 w-full overflow-hidden rounded-3xl">
+    <section className="mx-auto mb-10 flex max-w-6xl flex-col gap-4 px-8 pt-20 lg:h-svh lg:flex-row-reverse lg:justify-between lg:px-0">
+      <div className="grid h-full w-full grid-cols-2 py-10">
+        <div className="h-full w-full overflow-hidden rounded-l-[64px] border-r-4 border-r-background">
           <HeroImage1 />
         </div>
-        <div className="flex h-1/2 w-full">
-          <div className="w-1/2 overflow-hidden rounded-3xl border-y-8 border-r-4 border-background">
+        <div className="grid h-full w-full grid-rows-2">
+          <div className="overflow-hidden rounded-tr-[64px] border-b-4 border-l-4 border-b-background border-l-background">
             <HeroImage2 />
           </div>
-          <div className="w-1/2 overflow-hidden rounded-3xl border-y-8 border-l-4 border-background">
+          <div className="overflow-hidden rounded-br-[64px] border-l-4 border-t-4 border-l-background border-t-background">
             <HeroImage3 />
           </div>
         </div>
       </div>
-      <div className="flex w-full flex-col items-center justify-center px-4 lg:px-0">
+      <div className="flex w-full flex-col items-center justify-center lg:px-0">
         <h1 className="w-full -space-y-1 text-base font-medium text-foreground lg:text-lg lg:font-semibold">
           Selamat Datang di
         </h1>

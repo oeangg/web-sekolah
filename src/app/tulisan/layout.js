@@ -1,4 +1,4 @@
-import { Header } from "@/components/header/header";
+import { Header } from "@/components/header/header.app";
 import { HeaderPage } from "@/components/header.page";
 import React from "react";
 

@@ -8,13 +8,29 @@ import imgNews3 from "../assets/image/news3.jpg";
 import imgHero1 from "../assets/image/hero1.jpg";
 import imgHero2 from "../assets/image/hero2.jpg";
 import imgHero3 from "../assets/image/hero3.jpg";
+import imgHeader from "../assets/image/headerpage.jpg";
+
+export const HeaderPageImage = () => {
+  return (
+    <Image
+      src={imgHeader}
+      alt="img header halaman"
+      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+    />
+  );
+};
 
 export const HeadlineImage = () => {
   return (
     <Image
       src={imgHeadline}
       alt="image class"
-      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        filter: "grayscale(100%)",
+      }}
     />
   );
 };
@@ -55,7 +71,7 @@ export const ImageKepalaSekolah = () => {
       src={imgKepsek}
       alt="image class"
       style={{ width: "100%", height: "auto", objectFit: "cover" }}
-      className="rounded-full border-8 border-slate-100"
+      className="border-4 border-slate-100"
     />
   );
 };

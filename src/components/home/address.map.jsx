@@ -1,5 +1,5 @@
 import React from "react";
-import { HeadTitle } from "../title";
+import { HeadTitle } from "../UI/head.title";
 
 export const AddressMap = () => {
   return (

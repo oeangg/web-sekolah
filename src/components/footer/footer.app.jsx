@@ -7,7 +7,7 @@ import { KontakKami } from "./kontak.kami";
 
 export const Footer = () => {
   return (
-    <footer className="bg-frColor w-full">
+    <footer className="w-full bg-frColor">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-8 py-32 text-background sm:flex-row">
         <div className="flex w-full flex-col items-center justify-center gap-8 md:w-2/6 md:border-r-2 md:border-r-slate-400">
           <div className="flex w-full flex-col items-center gap-2">

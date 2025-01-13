@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { IoIosArrowDropright } from "react-icons/io";
 import { ListArticle } from "../get.list.data";
-import { HeadTitle } from "../title";
+import { HeadTitle } from "../UI/head.title";
 
 export const Article = () => {
   return (

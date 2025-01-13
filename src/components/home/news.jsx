@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 import { ListNews } from "../get.list.data";
-import { HeadTitle } from "../title";
+import { HeadTitle } from "../UI/head.title";
 import Link from "next/link";
 
 export const News = () => {

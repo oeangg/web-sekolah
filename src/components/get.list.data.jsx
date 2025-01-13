@@ -2,7 +2,9 @@ import React from "react";
 import dataNews from "../data/news";
 import article from "../data/article";
 import announce from "../data/announce";
+import { Accordian } from "./UI/accordian";
 import Link from "next/link";
+import faqs from "../data/faqs";
 
 import { ImageNews1, ImageNews2, ImageNews3, ImagePn } from "./get.image";
 
@@ -74,7 +76,7 @@ export const ListAnnounce = () => {
       {announce.map((an) => (
         <Link
           href="/berita"
-          className="bg-frColor group relative flex h-64 w-full flex-col gap-2 overflow-hidden rounded-md text-base font-normal duration-300 hover:bg-primaryColor"
+          className="group relative flex h-64 w-full flex-col gap-2 overflow-hidden rounded-md bg-frColor text-base font-normal duration-300 hover:bg-primaryColor"
           key={an.id}
         >
           <ImagePn />
@@ -89,6 +91,16 @@ export const ListAnnounce = () => {
             </h1>
           </div>
         </Link>
+      ))}
+    </div>
+  );
+};
+
+export const FaqList = () => {
+  return (
+    <div>
+      {faqs.map((faq, index) => (
+        <Accordian key={index} question={faq.question} answer={faq.answer} />
       ))}
     </div>
   );

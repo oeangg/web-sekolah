@@ -6,7 +6,7 @@ export const Accordian = ({ question, answer }) => {
   const [accordianOpen, setAccordianOpen] = useState(false);
 
   return (
-    <div className="border-b border-b-primaryColor">
+    <div className="border-b border-b-slate-200">
       <button
         onClick={() => setAccordianOpen(!accordianOpen)}
         className="flex w-full justify-between p-2 text-left text-xl font-bold"

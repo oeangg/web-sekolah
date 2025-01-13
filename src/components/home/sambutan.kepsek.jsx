@@ -21,7 +21,7 @@ export const SambutanKepalaSekolah = () => {
             website ini bermanfaat bagi kita semua.
           </p>
           <Link
-            href="/kepalasekolah/sambutan"
+            href="/sambutan"
             prefetch={false}
             className="flex w-fit items-center gap-2 rounded-lg bg-background px-6 py-3 text-base font-medium text-primaryColor duration-300 hover:bg-secondColor hover:text-background md:text-lg"
           >
