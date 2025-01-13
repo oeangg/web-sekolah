@@ -17,9 +17,7 @@ export const NavbarLink = () => {
         <li>
           <Link
             href="/"
-            className={
-              pathname === "/" ? "text-primaryColor" : "text-foreground"
-            }
+            className={`hover:border-b-[3px] hover:border-secondColor ${pathname === "/" ? `text-primaryColor` : `text-foreground`}`}
           >
             Beranda
           </Link>
@@ -27,7 +25,7 @@ export const NavbarLink = () => {
         <li>
           <Link
             href="/profil"
-            className={
+            className={`hover:border-b-[3px] hover:border-secondColor ${
               pathname === "/profil" ||
               pathname === "/sejarah" ||
               pathname === "/visimisi" ||
@@ -35,9 +33,9 @@ export const NavbarLink = () => {
               pathname === "/sambutan" ||
               pathname === "/kepalasekolah" ||
               pathname === "/fasilitas"
-                ? "text-primaryColor"
-                : "text-foreground"
-            }
+                ? `text-primaryColor`
+                : `text-foreground`
+            }`}
           >
             Profil
           </Link>
@@ -45,9 +43,9 @@ export const NavbarLink = () => {
         <li>
           <Link
             href="/kegiatan"
-            className={
-              pathname === "/kegiatan" ? "text-primaryColor" : "text-foreground"
-            }
+            className={`hover:border-b-[3px] hover:border-secondColor ${
+              pathname === "/kegiatan" ? `text-primaryColor` : `text-foreground`
+            }`}
           >
             Kegiatan
           </Link>
@@ -55,9 +53,9 @@ export const NavbarLink = () => {
         <li>
           <Link
             href="/gallery"
-            className={
-              pathname === "/gallery" ? "text-primaryColor" : "text-foreground"
-            }
+            className={`hover:border-b-[3px] hover:border-secondColor ${
+              pathname === "/gallery" ? `text-primaryColor` : `text-foreground`
+            }`}
           >
             Gallery
           </Link>
@@ -65,9 +63,7 @@ export const NavbarLink = () => {
         <li>
           <Link
             href="/ppdb"
-            className={
-              pathname === "/ppdb" ? "text-primaryColor" : "text-foreground"
-            }
+            className={`hover:border-b-[3px] hover:border-secondColor ${pathname === "/ppdb" ? `text-primaryColor` : `text-foreground`} `}
           >
             P.P.D.B
           </Link>
@@ -75,9 +71,7 @@ export const NavbarLink = () => {
         <li>
           <Link
             href="/kontak"
-            className={
-              pathname === "/kontak" ? "text-primaryColor" : "text-foreground"
-            }
+            className={`hover:border-b-[3px] hover:border-secondColor ${pathname === "/kontak" ? `text-primaryColor` : `text-foreground`}`}
           >
             Kontak Kami
           </Link>

@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <div className="grid grid-cols-1 gap-10">
       <Header />
-      <HeaderPage title="P.P.D.B" />
+      <HeaderPage title="GALLERY" />
       <div className="mx-auto w-full max-w-6xl">{children}</div>
       <Footer />
     </div>
