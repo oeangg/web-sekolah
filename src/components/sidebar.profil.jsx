@@ -17,6 +17,7 @@ export const SidebarProfil = () => {
             Profil
           </Link>
         </li>
+
         <li
           className={`w-full border-b py-1 ${pathname === "/sejarah" ? `border-b-primaryColor font-medium text-primaryColor` : `border-b-slate-200`}`}
         >
@@ -24,6 +25,7 @@ export const SidebarProfil = () => {
             Sejarah
           </Link>
         </li>
+
         <li
           className={`w-full border-b py-1 ${pathname === "/visimisi" ? `border-b-primaryColor font-medium text-primaryColor` : `border-b-slate-200`}`}
         >

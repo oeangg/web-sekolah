@@ -1,8 +1,7 @@
 import React from "react";
-import { IoIosArrowDropright } from "react-icons/io";
-import { ListNews } from "../get.list.data";
+import { ListNews } from "../data";
 import { HeadTitle } from "../UI/head.title";
-import Link from "next/link";
+import { LinkBtn } from "../UI/link.btn";
 
 export const News = () => {
   return (
@@ -10,12 +9,7 @@ export const News = () => {
       <HeadTitle text="Berita Terbaru" />
       <ListNews />
       <div className="flex justify-end">
-        <Link
-          href="/tulisan"
-          className="flex w-fit items-center gap-2 rounded-lg border border-primaryColor bg-transparent px-4 py-2 text-base font-medium text-primaryColor duration-300 hover:bg-primaryColor hover:text-background md:text-lg"
-        >
-          Selengkapnya <IoIosArrowDropright size={20} />
-        </Link>
+        <LinkBtn href="/tulisan" theme="secondary" text="Selengkapnya" />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import React from "react";
 import { FaBookReader } from "react-icons/fa";
-import { SosmedLink } from "./sosmed";
+import { SosmedLink } from "./link.sosmed";
 import { LinkMenu } from "./link.menu";
-import { TautanMenu } from "./tautan.menu";
-import { KontakKami } from "./kontak.kami";
+import { TautanMenu } from "./link.tautan";
+import { KontakKami } from "./info.kontak";
 
 export const Footer = () => {
   return (

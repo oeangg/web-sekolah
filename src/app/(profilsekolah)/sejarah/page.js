@@ -1,5 +1,5 @@
 import React from "react";
-import { HeadlineImage } from "@/components/get.image";
+import { HeadlineImage } from "@/components/image";
 
 export default function Home() {
   return (

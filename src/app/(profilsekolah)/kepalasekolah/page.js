@@ -1,4 +1,4 @@
-import { ImageKepalaSekolah } from "@/components/get.image";
+import { ImageKepalaSekolah } from "@/components/image";
 import React from "react";
 
 export default function Home() {

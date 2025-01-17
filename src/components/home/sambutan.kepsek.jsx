@@ -1,7 +1,7 @@
 import React from "react";
-import { IoIosArrowDropright } from "react-icons/io";
-import Link from "next/link";
-import { ImageKepalaSekolah } from "../get.image";
+
+import { ImageKepalaSekolah } from "../image";
+import { LinkBtn } from "../UI/link.btn";
 
 export const SambutanKepalaSekolah = () => {
   return (
@@ -20,13 +20,7 @@ export const SambutanKepalaSekolah = () => {
             pendidikan di sekolah kami. Terima kasih atas kunjungan Anda. Semoga
             website ini bermanfaat bagi kita semua.
           </p>
-          <Link
-            href="/sambutan"
-            prefetch={false}
-            className="flex w-fit items-center gap-2 rounded-lg bg-background px-6 py-3 text-base font-medium text-primaryColor duration-300 hover:bg-secondColor hover:text-background md:text-lg"
-          >
-            Selengkapnya <IoIosArrowDropright size={20} />
-          </Link>
+          <LinkBtn href="/sambutan" theme="secondary" text="Selengkapnya" />
         </div>
         <div className="w-fit overflow-hidden md:w-1/3">
           <ImageKepalaSekolah />

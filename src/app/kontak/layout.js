@@ -8,11 +8,11 @@ export default function Layout({ children }) {
     <div className="grid grid-cols-1 gap-10 bg-background">
       <Header />
       <div className="mb-16 mt-52 w-full">
-        <div className="mx-auto w-full max-w-6xl space-y-10">
+        <div className="mx-auto w-full max-w-6xl space-y-10 px-4 md:px-0">
           <h2 className="w-full text-center text-3xl font-extrabold">
             Kontak Kami
           </h2>
-          <p className="px-16 text-center text-base font-normal">
+          <p className="px-4 text-center text-base font-normal md:px-16">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
             quas, illo qui enim, impedit explicabo tempora debitis at eos
             voluptate consequuntur aliquid, sunt earum est odio accusantium quae

@@ -1,9 +1,9 @@
 import React from "react";
 import { LinkNavFooter } from "../UI/link.nav";
 
-export const LinkMenu = () => {
+export const TautanMenu = () => {
   return (
-    <div className="block space-y-2 text-base font-normal">
+    <div className="block space-y-2">
       <LinkNavFooter href="/home" text="Beranda" />
       <LinkNavFooter href="/profil" text="Profil" />
       <LinkNavFooter href="/kefiatan" text="Kegiatan" />

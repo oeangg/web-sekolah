@@ -1,7 +1,5 @@
+import { LinkBtn } from "@/components/UI/link.btn";
 import React from "react";
-import { HeadlineImage } from "@/components/get.image";
-import Link from "next/link";
-import { IoIosArrowDropright } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -18,12 +16,7 @@ export default function Home() {
       </p>
 
       <div className="mx-auto flex">
-        <Link
-          href="/sejarah"
-          className="flex w-fit items-center gap-2 rounded-lg border border-primaryColor bg-transparent px-4 py-2 text-base font-medium text-primaryColor duration-300 hover:bg-primaryColor hover:text-background md:text-lg"
-        >
-          Selengkapnya <IoIosArrowDropright size={20} />
-        </Link>
+        <LinkBtn href="/sejarah" text="Selengkapnya" theme="secondary" />
       </div>
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-4">
         <h2 className="text-2xl font-bold text-foreground">Profil</h2>

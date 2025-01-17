@@ -1,8 +1,8 @@
 import React from "react";
 import { HeadTitle } from "../UI/head.title";
-import { HeroImage3 } from "../get.image";
+import { HeroImage3 } from "../image";
 
-import { FaqList } from "../get.list.data";
+import { FaqList } from "../data";
 
 export const Faq = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { GoFileDirectory } from "react-icons/go";
-import { HeaderPageImage } from "./get.image";
+import { HeaderPageImage } from "./image";
 
 export const HeaderPage = ({ title }) => {
   return (

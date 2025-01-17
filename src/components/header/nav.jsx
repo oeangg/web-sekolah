@@ -3,6 +3,7 @@ import { FaBookReader } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 import { NavbarLink } from "./navbar.link";
 import Link from "next/link";
+import { Button } from "../UI/button";
 
 export const Navbar = () => {
   return (
@@ -17,9 +18,9 @@ export const Navbar = () => {
         </div>
       </Link>
       <NavbarLink />
-      <div className="hidden cursor-pointer text-primaryColor md:block">
+      <Button>
         <IoSearchOutline size={22} />
-      </div>
+      </Button>
     </nav>
   );
 };
