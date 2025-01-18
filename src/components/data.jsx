@@ -2,9 +2,9 @@ import React from "react";
 import dataNews from "../data/news";
 import article from "../data/article";
 import announce from "../data/announce";
-import { Accordian } from "./UI/accordian";
+
 import { CardPrimary, CardSecondary } from "./UI/card";
-import faqs from "../data/faqs";
+
 
 import { ImageNews2, ImageNews3, ImagePn } from "./image";
 
@@ -58,12 +58,3 @@ export const ListAnnounce = () => {
   );
 };
 
-export const FaqList = () => {
-  return (
-    <div>
-      {faqs.map((faq, index) => (
-        <Accordian key={index} question={faq.question} answer={faq.answer} />
-      ))}
-    </div>
-  );
-};
