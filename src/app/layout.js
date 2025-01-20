@@ -1,6 +1,8 @@
 import { Urbanist } from "next/font/google";
 
 import "./globals.css";
+import { Header } from "@/components/header/header.app";
+import { Footer } from "@/components/footer/footer.app";
 
 const urbanist = Urbanist({
   variable: "--font-inter",
@@ -15,7 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${urbanist.className} `}>{children}</body>
+      <body className={`${urbanist.className} `}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,29 +1,21 @@
-import { Header } from "@/components/header/header.app";
 import { HeaderPage } from "@/components/header.page";
 import React from "react";
-import { Footer } from "@/components/footer/footer.app";
 
 export default function Layout({ children }) {
   return (
-    <div className="grid grid-cols-1 gap-10 bg-background">
-      <Header />
-      <div className="mb-16 mt-52 w-full">
-        <div className="mx-auto w-full max-w-6xl space-y-10 px-4 md:px-0">
-          <h2 className="w-full text-center text-3xl font-extrabold">
-            Kontak Kami
-          </h2>
-          <p className="px-4 text-center text-base font-normal md:px-16">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            quas, illo qui enim, impedit explicabo tempora debitis at eos
-            voluptate consequuntur aliquid, sunt earum est odio accusantium quae
-            facilis quis. Corrupti ullam exercitationem animi esse dignissimos
-            necessitatibus quasi, ducimus eligendi.
-          </p>
+    <div className="mb-20 grid grid-cols-1 gap-10 bg-background">
+      <HeaderPage title="Kontak Kami" />
+      <div className="mx-auto w-full max-w-6xl space-y-10 px-4 md:px-0">
+        <p className="px-4 text-center text-base font-normal md:px-16">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          quas, illo qui enim, impedit explicabo tempora debitis at eos
+          voluptate consequuntur aliquid, sunt earum est odio accusantium quae
+          facilis quis. Corrupti ullam exercitationem animi esse dignissimos
+          necessitatibus quasi, ducimus eligendi.
+        </p>
 
-          {children}
-        </div>
+        {children}
       </div>
-      <Footer />
     </div>
   );
 }

@@ -26,7 +26,7 @@ export const Header = () => {
   return (
     <header
       className={`z-50 flex w-full items-center bg-bgNavbar text-textNavbar transition-all duration-300 ease-in-out ${
-        header ? `fixed h-16 shadow-md` : `fixed h-24`
+        header ? `fixed h-[70px] shadow-md` : `fixed h-24`
       }`}
     >
       <Navbar />

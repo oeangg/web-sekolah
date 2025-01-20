@@ -4,7 +4,7 @@ import { HeaderPageImage } from "./image";
 
 export const HeaderPage = ({ title }) => {
   return (
-    <div className="relative mb-14 mt-20 flex h-80 w-full items-center justify-center bg-slate-200">
+    <div className="relative mb-10 mt-20 flex h-80 w-full items-center justify-center bg-slate-200">
       <div className="h-80 w-full">
         <HeaderPageImage />
       </div>

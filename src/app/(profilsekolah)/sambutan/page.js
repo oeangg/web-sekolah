@@ -3,9 +3,9 @@ import { ImageKepalaSekolah } from "@/components/image";
 
 export default function Home() {
   return (
-    <div className="space-y-5 text-base font-normal text-foreground">
+    <div className="space-y-8 text-base font-normal text-foreground">
       <h1 className="text-2xl font-bold">Sambutan Kepala Sekolah</h1>
-      <div className="float-left pr-6 md:pr-8">
+      <div className="float-right w-fit overflow-hidden rounded-3xl">
         <ImageKepalaSekolah />
       </div>
       <p>

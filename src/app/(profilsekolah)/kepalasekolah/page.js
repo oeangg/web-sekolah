@@ -3,17 +3,18 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="space-y-6 text-base font-normal">
+    <div className="space-y-8 text-base font-normal">
       <h1 className="text-2xl font-bold">Profil Kepala Sekolah</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sapiente
         cum itaque quod fuga officiis eaque expedita exercitationem veritatis
         perferendis.
       </p>
-      <div className="flex w-full gap-4">
-        <div className="h-fit w-full basis-1/3">
+      <div className="flex w-full gap-6">
+        <div className="relative w-fit overflow-hidden rounded-3xl md:w-1/3">
           <ImageKepalaSekolah />
         </div>
+
         <div className="w-full basis-2/3 space-y-4">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque

@@ -33,8 +33,8 @@ export const Faq = () => {
   };
 
   return (
-    <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 px-8 lg:grid-cols-2">
-      <div className="relative w-full">
+    <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-8 lg:grid-cols-2">
+      <div className="relative w-full overflow-hidden rounded-3xl">
         <HeroImage3 />
       </div>
       <div className="w-full">

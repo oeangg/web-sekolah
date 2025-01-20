@@ -9,6 +9,27 @@ import imgHero1 from "../assets/image/hero1.jpg";
 import imgHero2 from "../assets/image/hero2.jpg";
 import imgHero3 from "../assets/image/hero3.jpg";
 import imgHeader from "../assets/image/headerpage.jpg";
+import imgGuruPr from "../assets/image/diansastro.jpg";
+import imgguruLk from "../assets/image/rocky.jpg";
+
+export const ImgGuruPerempuan = () => {
+  return (
+    <Image
+      src={imgGuruPr}
+      alt="image guru"
+      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+    />
+  );
+};
+export const ImgGuruLaki = () => {
+  return (
+    <Image
+      src={imgguruLk}
+      alt="image guru"
+      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+    />
+  );
+};
 
 export const HeaderPageImage = () => {
   return (
@@ -70,8 +91,7 @@ export const ImageKepalaSekolah = () => {
     <Image
       src={imgKepsek}
       alt="image class"
-      style={{ width: "100%", height: "auto", objectFit: "cover" }}
-      className="border-4 border-slate-100"
+      style={{ width: "100%", height: "100%", objectFit: "cover" }}
     />
   );
 };

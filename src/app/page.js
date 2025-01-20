@@ -12,10 +12,9 @@ import { Faq } from "@/components/home/faq";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <main>
       <HeroSection />
-      <main className="mb-20 grid w-full grid-cols-1 gap-20">
+      <section className="mb-20 grid w-full grid-cols-1 gap-20">
         <SambutanKepalaSekolah />
         <Announce />
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 lg:flex-row">
@@ -25,8 +24,7 @@ export default function Home() {
         <Summary />
         <Faq />
         <AddressMap />
-      </main>
-      <Footer />
-    </div>
+      </section>
+    </main>
   );
 }

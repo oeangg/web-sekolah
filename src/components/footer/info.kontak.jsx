@@ -4,7 +4,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 
 export const KontakKami = () => {
   return (
-    <div className="block space-y-2">
+    <div className="block space-y-2 text-slate-300">
       <div className="flex items-center gap-2">
         <FaLocationDot size={16} />
         <p>Jl. Raya Indonesia no. 45</p>

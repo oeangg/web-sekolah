@@ -3,8 +3,7 @@ import dataNews from "../data/news";
 import article from "../data/article";
 import announce from "../data/announce";
 
-import { CardPrimary, CardSecondary } from "./UI/card";
-
+import { CardBlog, CardNews, CardPengumuman } from "./UI/card";
 
 import { ImageNews2, ImageNews3, ImagePn } from "./image";
 
@@ -12,7 +11,7 @@ export const ListNews = () => {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       {dataNews.map((dt) => (
-        <CardSecondary
+        <CardNews
           link="/berita"
           thumbnail={<ImageNews3 />}
           title={dt.title}
@@ -29,12 +28,12 @@ export const ListArticle = () => {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       {article.map((ar) => (
-        <CardSecondary
+        <CardBlog
           link="/berita"
           thumbnail={<ImageNews2 />}
           title={ar.title}
           category={ar.category}
-          date={ar.date}
+          author={ar.author}
           key={ar.id}
         />
       ))}
@@ -46,7 +45,7 @@ export const ListAnnounce = () => {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {announce.map((an) => (
-        <CardPrimary
+        <CardPengumuman
           link="/berita"
           thumbnail={<ImagePn />}
           date={an.date}
@@ -57,4 +56,3 @@ export const ListAnnounce = () => {
     </div>
   );
 };
-

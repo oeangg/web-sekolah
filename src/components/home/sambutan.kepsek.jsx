@@ -5,7 +5,7 @@ import { LinkBtn } from "../UI/link.btn";
 
 export const SambutanKepalaSekolah = () => {
   return (
-    <div className="w-full bg-primaryColor py-20">
+    <div className="w-full bg-frColor py-20">
       <div className="mx-auto flex w-full max-w-6xl flex-col-reverse justify-between gap-10 px-8 md:flex-row lg:px-0">
         <div className="w-full md:w-2/3">
           <h1 className="text-base font-bold text-background lg:text-lg">
@@ -22,7 +22,7 @@ export const SambutanKepalaSekolah = () => {
           </p>
           <LinkBtn href="/sambutan" theme="secondary" text="Selengkapnya" />
         </div>
-        <div className="w-fit overflow-hidden md:w-1/3">
+        <div className="relative w-fit overflow-hidden rounded-3xl md:w-1/3">
           <ImageKepalaSekolah />
         </div>
       </div>

@@ -31,8 +31,13 @@ export const HeroSection = () => {
           anak Anda tumbuh menjadi pribadi yang mandiri dan percaya diri
         </p>
         <div className="flex gap-3">
-          <LinkBtn href="/profil" theme="primary" text="Profil Sekolah" />
-          <LinkBtn href="/kontak" theme="secondary" text="Kontak Kami" />
+          <LinkBtn
+            href="/profil"
+            theme="primary"
+            text="Profil Sekolah"
+            
+          />
+          <LinkBtn href="/kontak" theme="secondary" text="Kontak Kami"  />
         </div>
       </div>
     </section>
