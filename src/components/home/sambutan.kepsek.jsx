@@ -5,7 +5,7 @@ import { LinkBtn } from "../UI/link.btn";
 
 export const SambutanKepalaSekolah = () => {
   return (
-    <div className="w-full bg-frColor py-20">
+    <div className="w-full bg-primaryColor py-20">
       <div className="mx-auto flex w-full max-w-6xl flex-col-reverse justify-between gap-10 px-8 md:flex-row lg:px-0">
         <div className="w-full md:w-2/3">
           <h1 className="text-base font-bold text-background lg:text-lg">

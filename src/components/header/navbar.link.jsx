@@ -13,7 +13,7 @@ export const NavbarLink = () => {
       <div className="cursor-pointer md:hidden">
         <GiHamburgerMenu size={28} />
       </div>
-      <ul className="hidden gap-6 text-base font-semibold md:flex">
+      <ul className="hidden gap-6 text-base font-normal md:flex">
         <li>
           <Link
             href="/"

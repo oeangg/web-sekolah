@@ -4,7 +4,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 
 export const InfoContact = () => {
   return (
-    <div className="basis-1/3 space-y-8 rounded-2xl border-[6px] border-background bg-primaryColor p-12 text-background">
+    <div className="basis-1/3 space-y-8 rounded-2xl border-[6px] border-background bg-gradient-to-b from-primaryColor to-frColor p-12 text-background">
       <div>
         <h2 className="text-3xl font-bold">Info </h2>
         <p className="text-sm leading-4">

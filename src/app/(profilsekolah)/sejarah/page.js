@@ -1,5 +1,5 @@
 import React from "react";
-import { HeadlineImage } from "@/components/image";
+import { ImgSiswa } from "@/components/image";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
           odio reprehenderit officia voluptatum!
         </p>
 
-        <HeadlineImage />
+        <ImgSiswa />
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse in

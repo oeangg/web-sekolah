@@ -3,7 +3,7 @@ import React from "react";
 export const HeadTitle = ({ text }) => {
   return (
     <div className="mb-4 flex flex-col -space-y-11">
-      <h1 className="text-foregound mb-14 w-full text-3xl font-extrabold lg:text-4xl">
+      <h1 className="mb-14 w-full text-3xl font-extrabold text-foreground lg:text-4xl">
         {text}
       </h1>
       <div className="flex">

@@ -19,10 +19,10 @@ export const HeroSection = () => {
         </div>
       </div>
       <div className="flex w-full flex-col items-center justify-center lg:px-0">
-        <h1 className="w-full -space-y-1 text-base font-medium text-foreground lg:text-lg lg:font-semibold">
+        <h1 className="w-full -space-y-1 text-base font-medium text-thirdColor lg:text-lg lg:font-semibold">
           Selamat Datang di
         </h1>
-        <h2 className="mb-10 w-full text-3xl font-black text-primaryColor sm:text-4xl md:text-5xl lg:text-6xl">
+        <h2 className="mb-10 w-full bg-gradient-to-r from-primaryColor to-secondColor bg-clip-text text-3xl font-black text-transparent sm:text-4xl md:text-5xl lg:text-6xl">
           Sekolah Negeri Indonesia
         </h2>
 
@@ -31,13 +31,8 @@ export const HeroSection = () => {
           anak Anda tumbuh menjadi pribadi yang mandiri dan percaya diri
         </p>
         <div className="flex gap-3">
-          <LinkBtn
-            href="/profil"
-            theme="primary"
-            text="Profil Sekolah"
-            
-          />
-          <LinkBtn href="/kontak" theme="secondary" text="Kontak Kami"  />
+          <LinkBtn href="/profil" theme="primary" text="Profil Sekolah" />
+          <LinkBtn href="/kontak" theme="secondary" text="Kontak Kami" />
         </div>
       </div>
     </section>

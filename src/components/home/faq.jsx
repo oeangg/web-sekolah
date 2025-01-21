@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { HeadTitle } from "../UI/head.title";
-import { HeroImage3 } from "../image";
+import { FaqsImage } from "../image";
 import { AccordianItem } from "../UI/accordian";
 
 const faqs = [
@@ -33,13 +33,15 @@ export const Faq = () => {
   };
 
   return (
-    <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-8 lg:grid-cols-2">
-      <div className="relative w-full overflow-hidden rounded-3xl">
-        <HeroImage3 />
+    <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-8 md:flex-row">
+      <div className="relative basis-2/5 overflow-hidden rounded-3xl">
+        <FaqsImage />
       </div>
-      <div className="w-full">
-        <h1 className="text-base font-extrabold text-primaryColor">FAQ</h1>
-        <HeadTitle text="Seputar Sekolah" />
+      <div className="basis-3/5 space-y-10">
+        <div>
+          <h1 className="text-base font-extrabold text-primaryColor">FAQ</h1>
+          <HeadTitle text="Seputar Sekolah" />
+        </div>
         <div className="grid grid-cols-1 gap-4">
           {faqs.map((faq, index) => (
             <AccordianItem
