@@ -1,4 +1,3 @@
-import { Header } from "@/components/header/header.app";
 import { HeroSection } from "@/components/home/hero";
 
 import { Announce } from "@/components/home/announce";
@@ -7,7 +6,7 @@ import { Article } from "@/components/home/article";
 import { SambutanKepalaSekolah } from "@/components/home/sambutan.kepsek";
 import { Summary } from "@/components/home/summary";
 import { AddressMap } from "@/components/home/address.map";
-import { Footer } from "@/components/footer/footer.app";
+
 import { Faq } from "@/components/home/faq";
 
 export default function Home() {
