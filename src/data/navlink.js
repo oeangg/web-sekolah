@@ -20,7 +20,7 @@ export const NavItems = [
     href: "/ppdb",
   },
   {
-    text: "Kontak Kami",
+    text: "Kontak",
     href: "/kontak",
   },
 ];

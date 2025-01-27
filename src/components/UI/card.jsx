@@ -22,33 +22,6 @@ export const CardPengumuman = ({ href, thumbnail, date, title }) => {
   );
 };
 
-export const CardPengumumanPage = ({ href, thumbnail, date, title }) => {
-  return (
-    <Link
-      href={href}
-      target="_blank"
-      className="group relative flex h-64 w-full flex-col gap-2 overflow-hidden rounded-md bg-frColor text-base font-normal duration-300 hover:bg-primaryColor"
-    >
-      {thumbnail}
-      <div className="absolute bottom-5 left-2 w-full space-y-2">
-        <p className="w-fit rounded-md bg-primaryColor px-2 py-1 text-xs font-normal text-background">
-          {date}
-        </p>
-
-        <h1 className="line-clamp-2 px-2 text-lg font-bold leading-5 text-white group-hover:text-background group-hover:underline">
-          {title}
-        </h1>
-
-        <div className="flex w-full justify-end p-4">
-          <p className="w-fit rounded-md bg-thirdColor px-3 py-1 text-sm font-normal italic text-background group-hover:bg-background group-hover:text-primaryColor">
-            Selengkapnya ....
-          </p>
-        </div>
-      </div>
-    </Link>
-  );
-};
-
 export const CardNews = ({ href, thumbnail, date, category, title }) => {
   return (
     <Link

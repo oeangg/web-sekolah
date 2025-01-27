@@ -32,6 +32,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full pb-14 text-thirdColor">
         <p className="text-center text-xs font-medium md:text-sm">
           Copyright &#169;2024 Sekolah Negeri Indonesia

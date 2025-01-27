@@ -4,6 +4,10 @@ import React, { useState } from "react";
 import { HeadTitle } from "../UI/head.title";
 import { FaqsImage } from "../image";
 import { AccordianItem } from "../UI/accordian";
+import {
+  TransitionXRightToLeft,
+  TransitionYBottomToTop,
+} from "../motion/transition";
 
 const faqs = [
   {
@@ -34,25 +38,33 @@ export const Faq = () => {
 
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-8 md:flex-row">
-      <div className="relative basis-2/5 overflow-hidden rounded-3xl">
-        <FaqsImage />
+      <div className="basis-2/5">
+        <TransitionYBottomToTop delay={0}>
+          <div className="relative overflow-hidden rounded-3xl">
+            <FaqsImage />
+          </div>
+        </TransitionYBottomToTop>
       </div>
       <div className="basis-3/5 space-y-10">
-        <div>
-          <h1 className="text-base font-extrabold text-primaryColor">FAQ</h1>
-          <HeadTitle text="Seputar Sekolah" />
-        </div>
-        <div className="grid grid-cols-1 gap-4">
-          {faqs.map((faq, index) => (
-            <AccordianItem
-              key={index}
-              answer={faq.answer}
-              question={faq.question}
-              isOpen={activeIndex === index}
-              onClick={() => handleItemIndex(index)}
-            />
-          ))}
-        </div>
+        <TransitionYBottomToTop delay={0.15}>
+          <div>
+            <h1 className="text-base font-extrabold text-primaryColor">FAQ</h1>
+            <HeadTitle text="Seputar Sekolah" />
+          </div>
+        </TransitionYBottomToTop>
+        <TransitionYBottomToTop delay={0.3}>
+          <div className="grid grid-cols-1 gap-4">
+            {faqs.map((faq, index) => (
+              <AccordianItem
+                key={index}
+                answer={faq.answer}
+                question={faq.question}
+                isOpen={activeIndex === index}
+                onClick={() => handleItemIndex(index)}
+              />
+            ))}
+          </div>
+        </TransitionYBottomToTop>
       </div>
     </div>
   );

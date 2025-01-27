@@ -8,13 +8,13 @@ export const LinkBtn = ({ href, theme, text }) => {
   return (
     <Link
       href={href}
-      className={`flex w-fit items-center gap-2 rounded-lg px-2 py-2 text-base font-medium duration-300 md:text-lg md:font-semibold lg:px-6 ${
+      className={`group flex w-fit items-center gap-2 rounded-lg px-2 py-2 text-base font-medium tracking-wide transition-all duration-300 ease-in-out md:text-lg md:font-semibold lg:px-4 ${
         theme === "primary"
           ? `bg-primaryColor text-background hover:bg-frColor`
           : `border border-primaryColor bg-background text-primaryColor hover:border-secondColor hover:bg-secondColor hover:text-background`
       }`}
     >
-      {text} <IoIosArrowDropright size={20} />
+      {text} <IoIosArrowDropright size={20} className="group-hover:rotate-12" />
     </Link>
   );
 };
