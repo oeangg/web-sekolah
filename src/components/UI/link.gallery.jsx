@@ -7,7 +7,7 @@ export const GalleryItem = ({ href, image, text, date }) => {
       <div className="relative h-full w-full transform opacity-80 transition-all duration-300 ease-in-out group-hover:scale-125 group-hover:bg-primaryColor group-hover:opacity-100">
         {image}
       </div>
-      <div className="absolute bottom-0 left-0 right-0 w-full -space-y-1 bg-white p-2 text-slate-400 opacity-0 group-hover:opacity-90">
+      <div className="absolute bottom-0 left-0 right-0 w-full -space-y-1 bg-primaryColor p-2 text-white opacity-0 group-hover:opacity-90">
         <p className="w-full text-center text-xs font-light opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
           {date}
         </p>

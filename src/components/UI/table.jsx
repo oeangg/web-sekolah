@@ -20,7 +20,9 @@ export const TableListBody = ({ index, name, status, position }) => {
   return (
     <tr className="group border-b border-b-slate-200 text-left text-base font-normal">
       <td className="px-3 py-2">{index + 1}</td>
-      <td className="px-3 py-2 group-hover:underline">{name}</td>
+      <td className="cursor-pointer px-3 py-2 group-hover:underline">
+        <Link href={`/guru/${name}`}>{name}</Link>{" "}
+      </td>
       <td className="px-3 py-2">{position}</td>
       <td className="px-3 py-2">{status}</td>
       <td className="px-3 py-2">

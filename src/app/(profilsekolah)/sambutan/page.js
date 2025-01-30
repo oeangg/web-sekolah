@@ -7,7 +7,7 @@ export default function Home() {
     <TransitionYBottomToTop>
       <div className="space-y-8 text-base font-normal text-foreground">
         <h1 className="text-2xl font-bold">Sambutan Kepala Sekolah</h1>
-        <div className="float-right w-fit overflow-hidden rounded-3xl">
+        <div className="w-1/2 overflow-hidden rounded-3xl md:float-right md:w-1/3">
           <ImageKepalaSekolah />
         </div>
         <p>

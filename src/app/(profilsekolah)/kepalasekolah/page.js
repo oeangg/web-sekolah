@@ -12,7 +12,7 @@ export default function Home() {
           sapiente cum itaque quod fuga officiis eaque expedita exercitationem
           veritatis perferendis.
         </p>
-        <div className="flex w-full gap-6">
+        <div className="flex w-full flex-col gap-6 md:flex-row">
           <div className="relative w-fit overflow-hidden rounded-3xl md:w-1/3">
             <ImageKepalaSekolah />
           </div>

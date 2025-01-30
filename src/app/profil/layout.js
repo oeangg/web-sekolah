@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <div className="mb-20 grid grid-cols-1 gap-10">
       <HeaderPage title="Profil Sekolah" />
 
-      <div className="mx-auto w-full max-w-6xl">{children}</div>
+      <div className="mx-auto w-full max-w-6xl px-4 md:px-0">{children}</div>
     </div>
   );
 }
